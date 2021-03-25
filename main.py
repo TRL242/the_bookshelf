@@ -1,4 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
+import sqlite3
+
+db = sqlite3.connect("books-collection.db")
 
 app = Flask(__name__)
 
